@@ -2,6 +2,8 @@ import subprocess
 
 user_input = input("Enter text: ")
 
-command = ["echo", user_input]
-
-subprocess.run(command)
+subprocess.run(
+    ["echo", user_input],
+    check=True,
+    shell=False
+)
