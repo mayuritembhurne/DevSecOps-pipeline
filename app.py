@@ -1,9 +1,5 @@
-import subprocess
+def greet(name):
+    print(f"Hello, {name}")
 
-user_input = input("Enter text: ")
-
-subprocess.run(
-    ["echo", user_input],
-    check=True,
-    shell=False
-)
+if __name__ == "__main__":
+    greet("Mayuri")
